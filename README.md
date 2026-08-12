@@ -4,6 +4,7 @@ A 5-layer token chain instead of a single token. Every layer gets checked
 **together** before a transaction is allowed to complete. Runs on port
 **5000** by default (v1 uses 4000) so you can run both side by side.
 
+
 ## The chain
 
 ```
