@@ -22,6 +22,7 @@ session. This is what "checking tokens together" actually means in practice:
 a stolen page token from 2 minutes ago is useless without a valid tab token,
 session token, fresh action token, and unused nonce all matching at once.
 
+
 Why the layers are short-lived on purpose: the smaller the window a token is
 valid for, the less time an attacker has to capture and replay it. Page (90s)
 and action (20s) tokens are intentionally tight — they're meant to be
