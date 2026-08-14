@@ -41,7 +41,6 @@ namespaced differently: `tab:`, `page:`, `action:` vs v1's `session:`, `page:`).
 
 ```bash
 npm run dev
-```
 
 ## 2. Full test flow (curl)
 
