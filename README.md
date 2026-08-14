@@ -49,7 +49,7 @@ npm run dev
 # 1. Login - get session + first tab + first page token, all at once
 curl -X POST http://localhost:5000/auth/login \
   -H "Content-Type: application/json" -d '{"userId":"user123"}'
-# -> save sessionId, sessionToken, tabId, tabToken, pageToken
+# -> save sessionId, sessionToken, tabId, tabToken, pageToken saved
 
 # 2. (Optional) Navigate to a new page - get a fresh page token
 curl -X POST http://localhost:5000/page/new \
