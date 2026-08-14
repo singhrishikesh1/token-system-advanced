@@ -72,7 +72,6 @@ curl -X POST http://localhost:5000/transaction/confirm \
     "pageToken":"<pageTok>","actionToken":"<actionTok>",
     "nonce":"<nonce>","amount":500
   }'
-```
 
 Do step 3 twice in a row before confirming (simulating an old, reused action
 token) — the second confirm attempt will fail with "action token mismatch."
