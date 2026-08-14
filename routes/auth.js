@@ -100,8 +100,6 @@ router.post('/refresh', async (req, res) => {
   res.json({ message: 'session refreshed', sessionToken: newSessionToken, remainingSeconds });
 });
 
-// POST /auth/logout - immediate revoke, cascades because every other layer
-// check starts by requiring this session key to exist
 router.post('/logout', async (req, res) => {
   const { sessionId } = req.body;
   if (!sessionId) return res.status(400).json({ error: 'sessionId required' });
