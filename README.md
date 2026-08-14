@@ -100,6 +100,3 @@ generate and quicker to expire.
 Same pattern as v1: copy `routes/`, `middleware/`, `utils/` into your main
 backend, mount the five routers, point `REDIS_URL` at your shared Redis
 instance, swap the hardcoded `userId` for your real authenticated user.
-
-## 6. Securing
-
