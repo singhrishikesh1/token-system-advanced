@@ -98,4 +98,4 @@ generate and quicker to expire.
 ## 5. Integrating later
 
 Same pattern as v1: copy `routes/`, `middleware/`, `utils/` into your main
-backend, mount the five routers, point `REDIS_URL` at your shared
+backend, mount the five routers, point `REDIS_URL` at your
