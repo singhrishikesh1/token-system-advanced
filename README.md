@@ -5,13 +5,14 @@ A 5-layer token chain instead of a single token. Every layer gets checked
 **5000** by default (v1 uses 4000) so you can run both side by side.
 
 
-
+```
 LOGIN
   └─> Session Token   (3h hard limit, JWT rotates every 15.5 min)
         └─> Tab Token       (new one every time a new tab opens)
               └─> Page Token     (new one on EVERY page navigation, 90s life)
                     └─> Action Token  (new one per sensitive instruction, 20s life)
                           └─> Nonce       (one-time use, consumed at confirm)
+```
 
 Every layer is stored in Redis with its own TTL. To pass `/transaction/confirm`,
 **all five** must be valid and match what's currently stored — not just the
@@ -32,7 +33,6 @@ cd token-system-advanced
 npm install
 cp .env.example .env
 ```
-
 Make sure Redis is running (same instance v1 uses is fine — keys are
 namespaced differently: `tab:`, `page:`, `action:` vs v1's `session:`, `page:`).
 
