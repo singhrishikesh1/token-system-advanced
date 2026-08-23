@@ -5,9 +5,7 @@ A 5-layer token chain instead of a single token. Every layer gets checked
 **5000** by default (v1 uses 4000) so you can run both side by side.
 
 
-## The chain
 
-```
 LOGIN
   └─> Session Token   (3h hard limit, JWT rotates every 15.5 min)
         └─> Tab Token       (new one every time a new tab opens)
