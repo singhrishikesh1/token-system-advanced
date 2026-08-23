@@ -13,7 +13,6 @@ LOGIN
                     └─> Action Token  (new one per sensitive instruction, 20s life)
                           └─> Nonce       (one-time use, consumed at confirm)
 ```
-
 Every layer is stored in Redis with its own TTL. To pass `/transaction/confirm`,
 **all five** must be valid and match what's currently stored — not just the
 session. This is what "checking tokens together" actually means in practice:
