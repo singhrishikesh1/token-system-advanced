@@ -12,7 +12,7 @@ LOGIN
               └─> Page Token     (new one on EVERY page navigation, 90s life)
                     └─> Action Token  (new one per sensitive instruction, 20s life)
                           └─> Nonce       (one-time use, consumed at confirm)
-```
+
 
 Every layer is stored in Redis with its own TTL. To pass `/transaction/confirm`,
 **all five** must be valid and match what's currently stored — not just the
