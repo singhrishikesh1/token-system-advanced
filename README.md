@@ -90,5 +90,3 @@ built-in `crypto.randomBytes()` directly — same cryptographic strength, but
 no external formatting/parsing layer, and one less dependency to install.
 Combined with shorter TTLs across the board, tokens are both quicker to
 generate and quicker to
-
-## 5. Integrating later
