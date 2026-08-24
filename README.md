@@ -93,4 +93,3 @@ generate and quicker to
 
 ## 5. Integrating later
 
-Same pattern as v1: copy `routes/`, `middleware/`, `utils/` into your main
