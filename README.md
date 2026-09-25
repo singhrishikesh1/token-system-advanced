@@ -73,7 +73,6 @@ Do step 3 twice in a row before confirming (simulating an old, reused action
 token) — the second confirm attempt will fail with "action token mismatch."
 
 ## 3. New tab handling (frontend note)
-
 When the user opens a new tab, call `POST /tab/new` with their existing
 `sessionId` + `sessionToken`. Store the returned `tabId` in **`sessionStorage`**,
 not `localStorage` — `sessionStorage` is automatically scoped to a single
