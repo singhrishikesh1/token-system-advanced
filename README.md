@@ -81,8 +81,6 @@ browser tab and disappears when that tab closes, which is exactly the
 behavior a tab-bound token should have. `sessionToken` itself can stay in an
 HttpOnly cookie shared across tabs, since the session layer is intentionally
 tab-independent.
-done and secure for the recent data.
-
 ## 4. Why generation is faster than v1
 
 v1 used the `uuid` package (`uuidv4()`) for every token. v2 uses Node's
