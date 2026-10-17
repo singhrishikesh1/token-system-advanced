@@ -81,7 +81,3 @@ HttpOnly cookie shared across tabs, since the session layer is intentionally
 tab-independent.
 ## 4. Why generation is faster than v1
 
-v1 used the `uuid` package (`uuidv4()`) for every token. v2 uses Node's
-built-in `crypto.randomBytes()` directly — same cryptographic strength, but
-no external formatting/parsing layer, and one less dependency to install.
-Combined with 
